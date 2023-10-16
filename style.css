@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+
+body {
+    font-family: 'Freehand', cursive;
+    margin: 0;
+    height: 100hv;
+    box-sizing: border-box;
+    background-image: url('./img/cuna-del-invierno.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden; /* Para evitar el desbordamiento en la parte de abajo cuando cae el copo*/
+}
+
+#snowContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 0 5px 5px rgb(175,135,231);
+}
+
+.snowflake, .snowPoint {
+    position: absolute;
+    top: -50px;
+}
+
+
+@keyframes fallingSnow {
+
+    0% {
+        top: -50px;
+    }
+    100% {
+        top: 100vh;
+    }
+}
