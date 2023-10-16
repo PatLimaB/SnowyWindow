@@ -31,4 +31,4 @@ let createSnowflake = (density) => {
     }
 };
 
-createSnowflake(100);
+createSnowflake(150);
